@@ -59,9 +59,9 @@ class GWUpdateHiddenType extends eZWorkflowEventType
     /*!
      Constructor
     */
-    function GWUpdateHiddenType()
+    function __construct()
     {
-        $this->eZWorkflowEventType( self::WORKFLOW_TYPE_STRING, self::ezpI18n( 'gwupdatehidden/event', "Update hidden field" ) );
+        parent::__construct( self::WORKFLOW_TYPE_STRING, self::ezpI18n( 'gwupdatehidden/event', "Update hidden field" ) );
         $this->setTriggerTypes( array( 'content' => array( 'publish' => array( 'after' ) ) ) );
     }
 

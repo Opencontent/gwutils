@@ -49,7 +49,7 @@ class GWUpdateHidden
     /*!
      Constructor
     */
-    function GWUpdateHidden()
+    function __construct()
     {
         $this->Keys = array( 'id',
                              'version',
